@@ -3,6 +3,7 @@ class Celula:
         self.valor = valor
         self.chave = chave
 
+
 def inserir_ligada_inicio(L, k):
     if L.valor == None:
         L.valor = k
@@ -12,6 +13,7 @@ def inserir_ligada_inicio(L, k):
     nova.chave = L
     return nova
 
+
 def inserir_ligada_fim(L, k):
     x = L
     while x.chave != None:
@@ -20,11 +22,13 @@ def inserir_ligada_fim(L, k):
     nova.valor = k
     x.chave = nova
 
+
 def busca_ligada(L, k):
     x = L
     while x != None and x.valor != k:
         x = x.chave
     return x
+
 
 def Print(L):
     x = L
@@ -32,6 +36,7 @@ def Print(L):
         print(x.valor)
         x = x.chave
     print(x.valor)
+
 
 def Remover_Ligada(L, k):
     p = L
@@ -41,6 +46,7 @@ def Remover_Ligada(L, k):
         q = q.chave
     if q != None:
         p.chave = q.chave
+
 
 L = Celula()
 L = inserir_ligada_inicio(L, 35)
