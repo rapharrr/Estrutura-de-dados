@@ -12,8 +12,9 @@ def binary_search(vetor, x):
             return metade
     return -1
 
-vetorTeste = [2, 3, 4, 10, 40]
-x = 1
+
+vetorTeste = [-2, -1, 1, 10, 3, 4, 10, 40]
+x = -1
 result = binary_search(vetorTeste, x)
 if result != -1:
     print("Elemento está presente no vetor", str(result))
